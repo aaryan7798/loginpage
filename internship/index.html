@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUserId">User ID</label>
+                <input type="text" id="loginUserId" name="userId" required>
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-error-message"></p>
+            <p class="switch-form">
+                New here? <a href="#" id="show-signup">Sign up</a>
+            </p>
+            <p class="switch-form">
+                <a href="#" id="forgot-password">Forgot Password?</a>
+            </p>
+        </div>
+
+        <div class="form-container" id="signup-container">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signupName">Name</label>
+                <input type="text" id="signupName" name="name" required>
+                <label for="signupContact">Contact No</label>
+                <input type="text" id="signupContact" name="contact" required>
+                <label for="signupUserId">User ID</label>
+                <input type="text" id="signupUserId" name="userId" required>
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" name="password" required>
+                <label for="signupConfirmPassword">Re-enter Password</label>
+                <input type="password" id="signupConfirmPassword" name="confirmPassword" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p id="signup-error-message"></p>
+            <p class="switch-form">
+                Already have an account? <a href="#" id="show-login">Login</a>
+            </p>
+        </div>
+
+        <div class="form-container" id="reset-password-container">
+            <h2>Reset Password</h2>
+            <form id="resetPasswordForm">
+                <label for="resetUserId">User ID</label>
+                <input type="text" id="resetUserId" name="userId" required>
+                <button type="submit">Reset Password</button>
+            </form>
+            <p id="reset-password-message"></p>
+            <p class="switch-form">
+                Remembered? <a href="#" id="show-login-from-reset">Login</a>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
